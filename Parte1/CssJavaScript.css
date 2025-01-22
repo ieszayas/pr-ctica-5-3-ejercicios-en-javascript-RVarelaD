@@ -1,0 +1,184 @@
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+  }
+  
+  .navbar .navbar-brand {
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('../media/PortadaBlog.jpg') no-repeat center center/cover; /* Imagen de fondo */
+    height: 60vh; /* Ajusta la altura según lo desees */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Superposición oscura para mejorar la visibilidad del texto */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Hace que el contenido se muestre encima del overlay */
+  }
+  
+  .hero .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .hero .btn:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Button Hover */
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Carousel */
+  .carousel-inner img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* Redimensiona la imagen para que ocupe las dimensiones definidas */
+  }
+  
+  /* Cards */
+  .icon-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border: none;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+  
+  .icon-card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Oscurece el fondo */
+    z-index: 1;
+  }
+  
+  .icon-card .card-body {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .icon-card i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Table Styling */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .table thead th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table tbody td {
+    vertical-align: middle;
+  }
+  
+  /* Form Styling */
+  form .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  form .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  form .btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #bd2130;
+  }
+  
+  /* Adjustments for Media Queries */
+  @media (max-width: 768px) {
+    .hero {
+      height: 50vh;
+    }
+  
+    .carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .icon-card {
+      height: 200px;
+    }
+  
+    .card-img-left {
+      max-width: 50%;
+    }
+  
+    .card-body {
+      padding: 1.25rem;
+    }
+  }
+  

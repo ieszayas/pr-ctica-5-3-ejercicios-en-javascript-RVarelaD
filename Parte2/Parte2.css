@@ -7,25 +7,6 @@
     font-weight: bold;
 }
 
-/* Opcion de modo Oscuro/Claro */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.navbar-dark-mode {
-    background-color: #1f1f1f;
-}
-
-.table-dark-mode {
-    background-color: #1f1f1f;
-    color: #ffffff;
-}
-
-.table-dark-mode th {
-    background-color: #2c2c2c;
-}
-
 /* Hero Section */
 .hero {
     position: relative;
@@ -205,4 +186,112 @@ form .btn-danger:hover {
     .card-body {
         padding: 1.25rem;
     }
+}
+
+/* Opcion de modo Oscuro/Claro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar-dark-mode {
+    background-color: #1f1f1f;
+}
+
+.table-dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.table-dark-mode th {
+    background-color: #2c2c2c;
+}
+
+/* Estilo para la imagen en el modal */
+#modalImage {
+    width: 100%;
+    /* Ocupa el 100% del ancho del modal */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    max-height: 80vh;
+    /* Limita la altura máxima al 80% de la altura de la ventana */
+    object-fit: contain;
+    /* Asegura que la imagen se ajuste sin recortarse */
+}
+
+/* Estilo para el contenedor del carrusel */
+#galleryCarousel {
+    position: relative;
+    /* Asegúrate de que el contenedor sea relativo */
+}
+
+/* Estilo para los botones de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    /* Posiciona los botones de forma absoluta */
+    top: 40%;
+    /* Coloca los botones en el centro vertical */
+    width: 40px;
+    height: 50px;
+    background-color: #9c9c9c;
+    color: #0059b9;
+    /* Color de las flechas */
+    display: flex;
+    /* Usar flexbox para centrar el icono */
+    align-items: center;
+    /* Centrar verticalmente el icono */
+    justify-content: center;
+    /* Centrar horizontalmente el icono */
+}
+
+/* Cambiar el color de los iconos al pasar el mouse */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #5d5d5d;
+}
+
+/* Ajustar la posición de los botones */
+.carousel-control-prev {
+    left: -10px;
+}
+
+.carousel-control-next {
+    right: -10px;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    /* Fondo oscuro */
+    color: #61dafb;
+    /* Color del texto */
+    border-radius: 10px;
+    padding: 20px auto;
+    width: 300px;
+    margin: 20px auto;
+    /* Centrar el reloj */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+    font-family: 'Courier New', Courier, monospace;
+    /* Fuente monoespaciada */
+}
+
+.time {
+    font-size: 3rem;
+    /* Tamaño de la hora */
+}
+
+.date {
+    font-size: 1.2rem;
+    /* Tamaño de la fecha */
+}
+
+/* Estilo para el reloj en modo oscuro */
+.clock-dark-mode {
+    background-color: #404349; /* Fondo más claro que el fondo oscuro general */
+    color: #61dafb; /* Color del texto blanco */
 }

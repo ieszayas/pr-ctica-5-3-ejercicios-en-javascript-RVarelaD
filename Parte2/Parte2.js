@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contactForm");
 
@@ -75,28 +74,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
             form.reset(); // Limpia los campos
         }
+    });
 
-        // Funcionalidad de Modo Oscuro/Claro
-        const toggleThemeButton = document.getElementById("toggleTheme");
-        toggleThemeButton.addEventListener("click", function () {
-            document.body.classList.toggle("dark-mode");
-            const navbar = document.querySelector(".navbar");
-            const table = document.querySelector(".table");
+    // Funcionalidad de Modo Oscuro/Claro
+    const toggleThemeButton = document.getElementById("toggleTheme");
+    toggleThemeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        const navbar = document.querySelector(".navbar");
+        const table = document.querySelector(".table");
 
-            // Cambiar el color de la barra de navegación
-            if (document.body.classList.contains("dark-mode")) {
-                navbar.classList.add("navbar-dark-mode");
-                toggleThemeButton.textContent = "Modo Claro";
-            } else {
-                navbar.classList.remove("navbar-dark-mode");
-                toggleThemeButton.textContent = "Modo Oscuro";
-            }
+        // Cambiar el color de la barra de navegación
+        if (document.body.classList.contains("dark-mode")) {
+            navbar.classList.add("navbar-dark-mode");
+            toggleThemeButton.textContent = "Modo Claro";
+        } else {
+            navbar.classList.remove("navbar-dark-mode");
+            toggleThemeButton.textContent = "Modo Oscuro";
+        }
 
-            // Cambiar el color de la tabla
-            if (table) {
-                table.classList.toggle("table-dark-mode");
-            }
-        });
+        // Cambiar el color de la tabla
+        if (table) {
+            table.classList.toggle("table-dark-mode");
+        }
     });
 });
-    

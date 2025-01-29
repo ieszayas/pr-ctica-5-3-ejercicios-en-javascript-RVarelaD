@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (isValid) {
             const toastEnviar = new bootstrap.Toast(document.getElementById("toastEnviar"));
             toastEnviar.show();
+
+            document.getElementById("contactForm").reset();
         }
     });
 
